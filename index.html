@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepping into a new world</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <!-- En principio quería hacer esto como una modal, pero no llegaba a redactar el código
+     de la forma en que yo quería que quedara, así que decidí hacer que la página principal
+     fuese una pantalla de introducción al contenido (como hacen usualmente en los juegos). Por
+     eso aquí y en css algunos se llaman ''modal''. Primero, se ve las palabras de bienvenida y ya 
+     luego al clicar el botón se procede al contenido.-->
+    
+    <div class="modal">
+        <img src="../WELKIN MOON/IMG/three-moons.png" alt="">
+        <p>This is where the moon rises — an "elysium" for adventurers.
+        <br>The moon's radiance is distant, the snow-ashen groves are lush, and secrets 
+        <br>echo throughout the land like an ancient song.
+        <br>Go forth now and listen to the melody beneath the moonlight.</p>
+        <button>continue</button>
+    </div>
+    
+    <script defer>    
+
+        const boton = document.querySelector("button");
+
+        boton.addEventListener("click", event => {
+           window.location.href="../WELKIN MOON/home.html";
+        });
+
+    </script>
+</body>
+</html>
